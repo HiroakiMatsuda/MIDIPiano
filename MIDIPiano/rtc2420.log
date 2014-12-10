@@ -1,0 +1,25 @@
+2014-12-10 04:35:38,177 manager INFO 1.1.0
+2014-12-10 04:35:38,177 manager INFO Copyright (C) 2003-2010
+2014-12-10 04:35:38,177 manager INFO   Noriaki Ando
+2014-12-10 04:35:38,177 manager INFO   Intelligent Systems Research Institute, AIST
+2014-12-10 04:35:38,177 manager INFO Manager starting.
+2014-12-10 04:35:38,177 manager INFO Starting local logging.
+2014-12-10 04:35:38,184 manager.namingmanager INFO NameServer connection succeeded: corba/localhost
+2014-12-10 04:35:40,203 ManagerServant INFO Master manager not found
+2014-12-10 04:35:40,203 manager ERROR Traceback (most recent call last):
+  File "C:\Python26\lib\site-packages\OpenRTM_aist\Manager.py", line 1751, in initManagerServant
+    reffile = file(self._config.getProperty("manager.refstring_path"),'w')
+IOError: [Errno 2] No such file or directory: '/var/log/rtcmanager.ref'
+
+2014-12-10 04:35:59,559 SdoServiceAdmin WARNING No available SDO service in the factory: 
+2014-12-10 04:35:59,559 SdoServiceAdmin ERROR type  already exists.
+2014-12-10 04:35:59,561 SdoServiceAdmin WARNING No available SDO service in the factory: IDL:OpenRTM/ComponentObserver:1.0
+2014-12-10 04:35:59,561 SdoServiceAdmin ERROR type a926403d-1aaa-4334-808b-e686c37ab0e2 already exists.
+2014-12-10 04:37:08,223 manager ERROR Caught SystemException during root POA destruction
+2014-12-10 04:37:08,224 manager ERROR Traceback (most recent call last):
+  File "C:\Python26\lib\site-packages\OpenRTM_aist\Manager.py", line 1534, in shutdownORB
+    self._poa.destroy(False, True)
+  File "C:\Python26\lib\site-packages\omniORB\PortableServer.py", line 208, in destroy
+    _omnipy.poa_func.destroy(self, etherialize_objects,wait_for_completion)
+OBJECT_NOT_EXIST: CORBA.OBJECT_NOT_EXIST(omniORB.OBJECT_NOT_EXIST_POANotInitialised, CORBA.COMPLETED_NO)
+
